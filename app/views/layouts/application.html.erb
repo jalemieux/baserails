@@ -7,8 +7,46 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+ 
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+ 
+      <!-- Be sure to leave the brand out there if you want it shown -->
+      <a class="brand" href="#">BaseRails</a>
+ 
+      <!-- Everything you want hidden at 940px or less, place within here -->
+      <div class="nav-collapse collapse">
+              <ul class="nav">
+                      <li><%= link_to "Category 1" , '#' %></li>
+          <li><%= link_to "Category 2" , '#' %></li>
+              </ul>
+        <!-- .nav, .navbar-search, .navbar-form, etc -->
+      </div>
+ 
+    </div>
+  </div>
+</div>
 
-<%= yield %>
-
+<div class="container">
+        <div class="row">
+                <div class="span9"><%= yield %></div>
+                <div class="span3"><h2>Something Remarkable!</h2>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>        
+        </div>
+</div>
 </body>
+</html>
 </html>

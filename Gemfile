@@ -18,6 +18,11 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  gem 'therubyracer'
+  gem 'less-rails'
+  gem 'twitter-bootstrap-rails'
+  gem 'bootstrap-datetimepicker-rails'
+
 end
 
 gem 'jquery-rails'
@@ -36,3 +41,6 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+
+gem 'simple_form'
